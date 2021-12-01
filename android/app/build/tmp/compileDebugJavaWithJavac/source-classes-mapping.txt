@@ -1,0 +1,14 @@
+com/unsplashapp/MainApplication.java
+ com.unsplashapp.MainApplication
+ com.unsplashapp.MainApplication$1
+com/unsplashapp/BuildConfig.java
+ com.unsplashapp.BuildConfig
+com/unsplashapp/MainActivity.java
+ com.unsplashapp.MainActivity
+com/unsplashapp/ReactNativeFlipper.java
+ com.unsplashapp.ReactNativeFlipper
+ com.unsplashapp.ReactNativeFlipper$1
+ com.unsplashapp.ReactNativeFlipper$2
+ com.unsplashapp.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
