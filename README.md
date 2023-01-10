@@ -126,4 +126,8 @@ Run npm install
 - iOS run npx react-native run-ios
 - Android run npx react-native run-android
 
+## Demo of the app in action
+
+https://user-images.githubusercontent.com/78232169/211557747-93a1e6c9-a97b-40c9-86d6-eee6325d378c.mp4
+
 
