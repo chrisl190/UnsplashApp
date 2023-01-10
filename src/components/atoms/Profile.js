@@ -4,12 +4,17 @@ import {
   Text,
   View,
 } from 'react-native';
-import IconProfile from "../../assets/svg/iconProfile.svg";
+//import IconProfile from "../../assets/svg/iconProfile.svg";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Profile = ({ name }) => {
   return (
     <View style={styles.container}>
-      <IconProfile style={styles.icon}/>
+      <Icon
+        name="account"
+        size={25}
+        style={styles.icon}
+        />
       <Text style={styles.description}>{name}</Text>
     </View>
   )

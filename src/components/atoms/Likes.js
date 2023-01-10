@@ -4,12 +4,16 @@ import {
   Text,
   View,
 } from 'react-native';
-import IconLikes from "../../assets/svg/iconLikes.svg";
+import Icon from "react-native-vector-icons/AntDesign";
 
 const Likes = ({ likes }) => {
   return (
     <View style={styles.container}>
-      <IconLikes style={styles.icon}/>
+      <Icon
+        name="like1"
+        size={20}
+        style={styles.icon}
+        />
       <Text style={styles.description}>{likes}</Text>
     </View>
   )
