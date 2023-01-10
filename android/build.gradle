@@ -19,6 +19,9 @@ buildscript {
     }
 }
 
+//https://github.com/facebook/react-native/issues/35210
+def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+
 allprojects {
     repositories {
         mavenCentral()
@@ -34,5 +37,11 @@ allprojects {
 
         google()
         maven { url 'https://www.jitpack.io' }
+    }
+    configurations.all {
+        resolutionStrategy {
+            // Remove this override in 0.65+, as a proper fix is included in react-native itself.
+            force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
+        }
     }
 }
